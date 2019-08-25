@@ -1,12 +1,22 @@
 package fairway.javabasic.Dictionary;
 
+import javax.imageio.IIOException;
+import java.io.IOException;
+
 public class Run {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
-        Dictionary dic = new Dictionary();
+        try {
 
-        System.out.println(dic.lookup("apple"));
+            Dictionary dic = new Dictionary();
+
+            System.out.println(dic.lookup("book"));
+
+        } catch (IIOException e){
+            e.printStackTrace();
+        }
+
     }
 
 }
