@@ -1,25 +1,32 @@
 package fairway.javabasic.Dictionary;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Dictionary {
 
 
-    ArrayList<Lan> db;
+//    ArrayList<Lan> db;
+    HashMap<String,String> db;
 
     public Dictionary() {
 
-        this.db.add(new Lan("apple","panthee"));
-        this.db.add(new Lan("orange","lainMawThee"));
-        this.db.add(new Lan("bool","sarOak"));
+        this.db.put("apple","pantee");
+        this.db.put("Foo","Bar");
+        this.db.put("guu","ger");
 
     }
 
 
     public String lookup(String keyword){
 
-        for (Lan aa:this.db){
-            if(aa.getGetEng() == keyword) return aa.getGetMm();
+        for (Map.Entry<String,String> m:this.db.entrySet()){
+            if (m.getKey() == keyword){
+
+                return m.getValue();
+            }
+
         }
 
         return "not found";
