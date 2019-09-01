@@ -6,16 +6,13 @@ import java.util.Map;
 
 public class Dictionary {
 
-
-//    ArrayList<Lan> db;
     HashMap<String,String> db;
+
 
     public Dictionary() throws IOException {
 
         InputStream in = new FileInputStream("ornagai.tsv");
-
         InputStreamReader reader = new InputStreamReader(in);
-
         BufferedReader br = new BufferedReader(reader);
 
         db = new HashMap<String, String>();

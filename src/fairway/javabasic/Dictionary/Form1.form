@@ -31,8 +31,11 @@
           </grid>
         </constraints>
         <properties>
+          <background color="-16184000"/>
           <editable value="false"/>
-          <font name="Zawgyi-One"/>
+          <enabled value="false"/>
+          <font name="Zawgyi-One" size="18"/>
+          <foreground color="-16053229"/>
           <text value=""/>
         </properties>
       </component>

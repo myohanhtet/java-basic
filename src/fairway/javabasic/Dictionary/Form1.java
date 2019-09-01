@@ -32,18 +32,23 @@ public class Form1 {
                 String src = textField1.getText();
                 String result = dic.lookup(src);
                 textPane1.setText(result);
+
             }
         });
     }
 
     public static void main(String[] args) {
+
         JFrame frame = new JFrame("Dictionary");
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-
         frame.add(new Form1().rootPane);
         frame.setVisible(true);
-        frame.setSize(500,300);
+        frame.setSize(600,400);
+
     }
 
 
+    private void createUIComponents() {
+        // TODO: place custom component creation code here
+    }
 }
